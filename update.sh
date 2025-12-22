@@ -17,8 +17,8 @@ declare -A MODS=(
   [2545327648]="@DabsFramework"
   [2291785308]="@Core"
   [3628768530]="@Gunther3"
-  #[2381686295]="@Minimap"
-  #[2925837634]="@MiniMapZoom"
+  [2381686295]="@Minimap"
+  [2925837634]="@MiniMapZoom"
 )
 
 MOD_LIST=""
