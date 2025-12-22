@@ -19,8 +19,8 @@ declare -A MODS=(
   #[2792984722]="@Navigation" bullshit
   [3628768530]="@Gunther3"
   #[2979165671]="@Minimap"
-  [2925837634]="@MiniMapZoom"
   [2381686295]="@Minimap"
+  [2925837634]="@MiniMapZoom"
 )
 
 MOD_LIST=""
