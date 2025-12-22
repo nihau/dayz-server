@@ -12,8 +12,8 @@ STEAM_LOGIN="nihau93"
 
 ### MODS (WorkshopID => FolderName)
 declare -A MODS=(
-  [1559212036]="@CF"
-  [1564026768]="@Community-Online-Tools"
+#  [1559212036]="@CF"
+#  [1564026768]="@Community-Online-Tools"
 #  [2545327648]="@DabsFramework"
 #  [2291785308]="@Core"
 #  [2792984722]="@Navigation"
