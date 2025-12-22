@@ -82,8 +82,8 @@ echo "================================================"
 echo " Installing Keys"
 echo "================================================"
 
-rm "$KEYS_DIR/*"
 mkdir -p "$KEYS_DIR"
+rm -f "$KEYS_DIR"/*.bikey 2>/dev/null || true
 
 ### COPY ALL BIKEYS
 #for MOD_ID in "${!MODS[@]}"; do
