@@ -16,11 +16,9 @@ declare -A MODS=(
   [1564026768]="@Community-Online-Tools"
   [2545327648]="@DabsFramework"
   [2291785308]="@Core"
-  #[2792984722]="@Navigation" bullshit
   [3628768530]="@Gunther3"
-  #[2979165671]="@Minimap"
-  [2381686295]="@Minimap"
-  [2925837634]="@MiniMapZoom"
+  #[2381686295]="@Minimap"
+  #[2925837634]="@MiniMapZoom"
 )
 
 MOD_LIST=""
