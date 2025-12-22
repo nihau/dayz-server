@@ -17,8 +17,8 @@ declare -A MODS=(
   [2545327648]="@DabsFramework"
   [2291785308]="@Core"
   [3628768530]="@Gunther3"
-  #[2381686295]="@Minimap"
-  #[2925837634]="@MiniMapZoom"
+  [2381686295]="@Minimap"
+  [2925837634]="@MiniMapZoom"
 )
 
 MOD_LIST=""
@@ -85,13 +85,14 @@ echo "================================================"
 mkdir -p "$KEYS_DIR"
 
 ### COPY ALL BIKEYS
-for MOD_ID in "${!MODS[@]}"; do
-  SRC_KEYS="$WORKSHOP_DIR/$MOD_ID/keys"
-  if [ -d "$SRC_KEYS" ]; then
-    echo " Copying keys from $MOD_ID"
-    cp -f "$SRC_KEYS/"*.bikey "$KEYS_DIR/" 2>/dev/null || true
-  fi
-done
+#for MOD_ID in "${!MODS[@]}"; do
+#  SRC_KEYS="$WORKSHOP_DIR/$MOD_ID/keys"
+#  if [ -d "$SRC_KEYS" ]; then
+#    echo " Copying keys from $MOD_ID"
+#    cp -f "$SRC_KEYS/"*.bikey "$KEYS_DIR/" 2>/dev/null || true
+#  fi
+#done
+find "$WORKSHOP_DIR" -type f -iname "*.bikey" -exec cp -f {} "$KEYS_DIR/" \; || true
 
 echo
 echo "================================================"
