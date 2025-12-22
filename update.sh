@@ -82,7 +82,7 @@ echo "================================================"
 echo " Installing Keys"
 echo "================================================"
 
-rm -rf "$KEYS_DIR"
+rm "$KEYS_DIR/*"
 mkdir -p "$KEYS_DIR"
 
 ### COPY ALL BIKEYS
