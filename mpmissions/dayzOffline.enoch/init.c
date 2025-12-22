@@ -107,6 +107,7 @@ class CustomMission: MissionServer
 					{
 						canister.SetLiquidType(LIQUID_WATER);
 						canister.SetQuantity(canister.GetQuantityMax());
+						player.SetQuickBarEntityShortcut(canister, 1);
 					}
 					
 					backpackEnt.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
