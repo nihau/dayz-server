@@ -83,17 +83,15 @@ echo " Installing Keys"
 echo "================================================"
 
 mkdir -p "$KEYS_DIR"
-rm -f "$KEYS_DIR"/*.bikey 2>/dev/null || true
 
 ### COPY ALL BIKEYS
-#for MOD_ID in "${!MODS[@]}"; do
-#  SRC_KEYS="$WORKSHOP_DIR/$MOD_ID/keys"
-#  if [ -d "$SRC_KEYS" ]; then
-#    echo " Copying keys from $MOD_ID"
-#    cp -f "$SRC_KEYS/"*.bikey "$KEYS_DIR/" 2>/dev/null || true
-#  fi
-#done
-find "$WORKSHOP_DIR" -type f -iname "*.bikey" -exec cp -f {} "$KEYS_DIR/" \; || true
+for MOD_ID in "${!MODS[@]}"; do
+  SRC_KEYS="$WORKSHOP_DIR/$MOD_ID/keys"
+  if [ -d "$SRC_KEYS" ]; then
+    echo " Copying keys from $MOD_ID"
+    cp -f "$SRC_KEYS/"*.bikey "$KEYS_DIR/" 2>/dev/null || true
+  fi
+done
 
 echo
 echo "================================================"
