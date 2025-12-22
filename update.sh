@@ -20,6 +20,24 @@ declare -A MODS=(
   [3628768530]="@Gunther3"
 )
 
+MOD_LIST=""
+
+for id in "${!MODS[@]}"; do
+  MOD_LIST+="${MODS[$id]};"
+done
+
+# remove trailing ;
+MOD_LIST="${MOD_LIST%;}"
+
+ENV_FILE="/home/dayz/servers/dayz-server/mods.env"
+
+cat > "$ENV_FILE" <<EOF
+MODS=${MOD_LIST}
+EOF
+
+echo "Generated $ENV_FILE:"
+cat "$ENV_FILE"
+
 echo "================================================"
 echo " Updating DayZ Server & Workshop Mods"
 echo "================================================"
