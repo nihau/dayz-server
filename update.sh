@@ -25,10 +25,11 @@ echo " Updating DayZ Server & Workshop Mods"
 echo "================================================"
 
 ### UPDATE SERVER + DOWNLOAD MODS
+#+app_update 223350 validate \ возможно валидейт перетирает нахуй всё
 "$STEAMCMD" \
   +force_install_dir "$SERVER_DIR" \
   +login "$STEAM_LOGIN" \
-  +app_update 223350 validate \
+  +app_update 223350 \
 $(for MOD_ID in "${!MODS[@]}"; do
     echo "  +workshop_download_item 221100 $MOD_ID validate"
   done) \
