@@ -3372,16 +3372,6 @@
 		<attachments chance="1.00">
 			<item name="TireRepairKit" chance="1.00" />
 		</attachments>
-		<attachments chance="1.00">
-			<item name="Chainmail" chance="1.00" />
-		</attachments>
-		<attachments chance="1.00">
-			<item name="Chainmail_Coif" chance="1.00" />
-		</attachments>
-		<attachments chance="1.00">
-			<item name="Chainmail_Leggings" chance="1.00" />
-		</attachments>
-		
 	</type>
 	<!-- -->
 	<type name="Sedan_02"> <!-- SARKA -->
