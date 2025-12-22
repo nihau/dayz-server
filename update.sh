@@ -95,6 +95,15 @@ for MOD_ID in "${!MODS[@]}"; do
   fi
 done
 
+rm -r "$KEYS_DIR"
+mkdir -p "$KEYS_DIR"
+
+echo " Searching for bikey files in workshop mods..."
+
+find "$WORKSHOP_DIR" -type f -iname "*.bikey" -print -exec cp -f {} "$KEYS_DIR/" \;
+
+echo " Keys installed:"
+
 echo
 echo "================================================"
 echo " Fixing Permissions"
