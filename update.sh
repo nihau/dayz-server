@@ -12,13 +12,13 @@ STEAM_LOGIN="nihau93"
 
 ### MODS (WorkshopID => FolderName)
 declare -A MODS=(
-  [1559212036]="@CF"
-  [1564026768]="@Community-Online-Tools"
-  [2545327648]="@DabsFramework"
-  [2291785308]="@Core"
+#  [1559212036]="@CF"
+#  [1564026768]="@Community-Online-Tools"
+#  [2545327648]="@DabsFramework"
+#  [2291785308]="@Core"
   [3628768530]="@Gunther3"
-  [2381686295]="@Minimap"
-  [2925837634]="@MiniMapZoom"
+#  [2381686295]="@Minimap"
+#  [2925837634]="@MiniMapZoom"
 )
 
 MOD_LIST=""
