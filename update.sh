@@ -19,9 +19,10 @@ declare -A MODS=(
   [2792984722]="@DayZ-Expansion-Navigation"
 
 #  [2291785308]="@Core"
-  [3628768530]="@Gunther3"
+   [3628768530]="@Gunther3"
 #  [2381686295]="@Minimap"
 #  [2925837634]="@MiniMapZoom"
+   [3630870238]="@RPMDisplay"
 )
 
 MOD_LIST=""
