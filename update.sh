@@ -22,7 +22,7 @@ declare -A MODS=(
    [3628768530]="@Gunther3"
 #  [2381686295]="@Minimap"
 #  [2925837634]="@MiniMapZoom"
-   [3630870238]="@RPMDisplay"
+#   [3630870238]="@RPMDisplay"
 )
 
 MOD_LIST=""
